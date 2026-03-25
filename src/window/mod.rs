@@ -425,6 +425,17 @@ fn window_matches(window: WindowRef, role: &XdgToplevelSurfaceRoleAttributes, m:
         }
     }
 
+    if let Some(is_fullscreen) = m.is_fullscreen {
+        if role
+            .current_server_state()
+            .states
+            .contains(xdg_toplevel::State::Fullscreen)
+            != is_fullscreen
+        {
+            return false;
+        }
+    }
+
     if let Some(title_re) = &m.title {
         let Some(title) = &role.title else {
             return false;
