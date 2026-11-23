@@ -35,13 +35,19 @@ tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
 tracy-client = { version = "0.18.5", default-features = false }
 
 [workspace.dependencies.smithay]
-git = "https://github.com/urayde/smithay.git"
-rev = "17fd83d8af7d0f0965eccbd30943eb115d2e56bb"
+# git = "https://github.com/urayde/smithay.git"
+# rev = "17fd83d8af7d0f0965eccbd30943eb115d2e56bb"
+git = "https://github.com/Roodnt/smithay.git"
+rev = "e33b217a3c2357124dce7ef997bb4766ff24a812"
+# path = "/home/roodnt/Documents/smithay/main"
 default-features = false
 
 [workspace.dependencies.smithay-drm-extras]
-git = "https://github.com/urayde/smithay.git"
-rev = "17fd83d8af7d0f0965eccbd30943eb115d2e56bb"
+# git = "https://github.com/urayde/smithay.git"
+# rev = "17fd83d8af7d0f0965eccbd30943eb115d2e56bb"
+git = "https://github.com/Roodnt/smithay.git"
+rev = "e33b217a3c2357124dce7ef997bb4766ff24a812"
+# path = "/home/roodnt/Documents/smithay/main/smithay-drm-extras"
 
 [package]
 name = "niri"
